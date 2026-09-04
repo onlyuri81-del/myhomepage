@@ -178,11 +178,52 @@ ul {
   color: var(--color-primary);
 }
 
-.contact-content {
-  text-align: center;
+/* Career */
+.career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.contact-list {
+.career-item {
+  background: var(--color-bg-alt);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.career-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.career-header h3 {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.career-period {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.career-item ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.career-item li {
+  margin-bottom: 0.4rem;
+}
+
+.contact-content {
+  text-align: center;
+}.contact-list {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
