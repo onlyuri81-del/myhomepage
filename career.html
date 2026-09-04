@@ -17,10 +17,23 @@
     <div class="timeline">
       <article class="timeline-item company-sandisk">
         <div class="timeline-year">2019</div>
-        <div class="timeline-dot timeline-dot--pulse"></div><div class="timeline-card">
-          <div class="card-header"><div class="company-heading"><div class="company-logo logo-sandisk"><img src="images/sandisk-logo.png" alt="SanDisk 공식 로고" /></div><div><h2>Storage Systems &amp; Interface Engineering</h2><span>SanDisk · INFRA팀 · 부장</span></div></div><time>2019.07 — 현재</time></div>
-          <div class="hero-metrics"><div class="metric"><strong>BiCS 3D NAND</strong><span>System Qualification</span></div><div class="metric"><strong>Host-Flash Spec</strong><span>Ecosystem Co-work</span></div><div class="metric"><strong>15+ Years</strong><span>End-to-End Productization</span></div></div>
-          <div class="career-story"><p class="summary-highlight">차세대 낸드 플래시의 물리적 한계를 시스템 아키텍처 레벨에서 보완하고, 사내외 이해관계자를 조율해 기술 규격을 양산 제품으로 완성합니다.</p><ul class="achievement-list"><li><strong>차세대 인터페이스 최적화:</strong> 3D NAND 기반 SSD 아키텍처를 검증하고 컨트롤러-메모리 간 병목 해소를 위한 시스템 사양을 설계</li><li><strong>글로벌 기술 표준 조율:</strong> Host-Based Flash 인터페이스의 호환성과 성능 트레이드오프를 조율해 상용화 가능한 규격 도출</li><li><strong>크로스펑셔널 리더십:</strong> NAND 설계, 펌웨어, 시스템 품질 검증 팀을 연결해 제품화 리스크를 조기에 식별</li></ul></div><div class="tech-stack"><span>NAND Flash Architecture</span><span>PCIe / NVMe</span><span>Interface Specification</span><span>System Validation</span><span>Tech Leadership</span></div>
+        <div class="timeline-dot timeline-dot--pulse"></div>
+        <div class="timeline-card">
+          <div class="card-header"><div class="company-heading"><div class="company-logo logo-sandisk"><img src="images/sandisk-logo.png" alt="SanDisk 공식 로고" /></div><div><h2>SSD Firmware Power &amp; Thermal Architecture Tech Lead / Principal Engineer</h2><span>SanDisk · INFRA Team · 2019.07 — Present</span></div></div></div>
+          <p class="executive-summary">Active Idle(FWAI)부터 복합 저전력 리텐션(PTMM/LPM)까지, SSD 전력·열 관리 전 주기를 설계하고 양산 안정성을 검증하는 펌웨어 아키텍트입니다.</p>
+          <div class="hero-metrics">
+            <div class="metric power-metric"><strong>150mW Power Target</strong><span>Active Idle (FWAI) Specification Lead</span></div>
+            <div class="metric thermal-metric"><strong>PTMM Architecture</strong><span>Complex Retention · DPS3.2 / RoT / XRAM</span></div>
+            <div class="metric"><strong>End-to-End Ownership</strong><span>Requirements → Design Review → OQC Issue Defense</span></div>
+          </div>
+          <section class="project-history-list" aria-label="SanDisk project history">
+            <article class="project-subcard power-project"><div class="project-title"><h3>SHURI2 <span>PTMM / LPM Owner</span></h3><time>2026 ~ 현재</time></div><p>PTMM 아키텍처를 총괄하며 DPS3.2, RoT Retention, XRAM, LPM Buffer 구조의 사양 검토와 설계를 리딩했습니다. LPM Validation Plan 수립 및 정기 LPM Test Plan Sync를 주관했습니다.</p><div class="project-tags"><span>PTMM</span><span>DPS 3.2</span><span>RoT Retention</span><span>LPM Buffer</span><span>Architecture Review</span></div></article>
+            <article class="project-subcard power-project"><div class="project-title"><h3>SHURI <span>FWAI Feature Owner · Infra Lead</span></h3><time>2024 ~ 2025</time></div><p>Physical/Logical FWAI Flow를 설계하고 PMM/LPM 인프라 모듈 표준 가이드와 Target Guideline을 수립했습니다.</p><div class="project-tags"><span>FWAI Flow</span><span>PMM/LPM</span><span>Target Guideline</span><span>Feature Lead</span></div></article>
+            <article class="project-subcard thermal-project"><div class="project-title"><h3>ATLAS3 <span>FWAI Power &amp; Thermal 분석</span></h3><time>2023 ~ 2024</time></div><p>용량 의존성과 ASIC Leakage 특성에 따른 FWAI Power Consumption을 분석하고 FWAI Timer/Flow와 Thermal Shutdown(TSD) OQC 크리티컬 이슈를 선제 해결했습니다.</p><div class="project-tags"><span>ASIC Leakage</span><span>Power Analysis</span><span>TSD Handling</span><span>OQC Defense</span></div></article>
+            <article class="project-subcard power-project"><div class="project-title"><h3>MAIA <span>FWAI Design Review Lead</span></h3><time>Infra Team</time></div><p>150mW 저전력 타깃을 위한 Active Idle 개념과 Flow/Test Plan을 도출하고 사내 FWAI Design Review와 PMM Integration을 주관했습니다.</p><div class="project-tags"><span>150mW Target</span><span>Design Review Lead</span><span>PMM Integration</span></div></article>
+            <article class="project-subcard thermal-project"><div class="project-title"><h3>CALX3 <span>개발 지원 및 이슈 트래킹</span></h3><time>Project Support</time></div><p>Async Over/Under Temp와 Critical Warning Bit을 핸들링하고 TSD Logging 및 Dump 로깅 체계를 대응했습니다.</p><div class="project-tags"><span>Thermal Stability</span><span>TSD Dump/Logging</span><span>Async Temp Guard</span></div></article>
+            <article class="project-subcard thermal-project"><div class="project-title"><h3>Atlas <span>Architecture 설계 및 검토</span></h3><time>Architecture</time></div><p>Throttling, ETT, LPM Offset, Thermal Shutdown, Sensing Strategy를 정의하고 Active Idle 및 Thermal/Power Management 사양을 검토·확정했습니다.</p><div class="project-tags"><span>Thermal Throttling</span><span>Sensing Strategy</span><span>ETT</span><span>LPM Offset</span></div></article>
+          </section>
         </div>
       </article>
       <article class="timeline-item company-lg">
