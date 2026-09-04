@@ -3,124 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>강남욱의 홈페이지 입니다</title>
+  <meta name="description" content="강남욱의 SSD, 펌웨어 및 임베디드 소프트웨어 엔지니어링 포트폴리오" />
+  <title>강남욱 | Storage Engineering Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header class="header">
-    <nav class="navbar">
-      <a href="#home" class="logo">MyHomepage</a>
-      <ul class="nav-links">
-        <li><a href="#home">홈</a></li>
-        <li><a href="#about">소개</a></li>
-        <li><a href="#career">경력</a></li>
-        <li><a href="#contact">연락처</a></li>
-      </ul>
-      <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+<body class="tech-theme">
+  <header class="navbar">
+    <a class="logo" href="index.html"><span class="brand-accent">SanDisk</span> · Storage Eng</a>
+    <button class="menu-toggle" aria-label="메뉴 열기">☰</button>
+    <nav class="nav-links">
+      <a class="active" href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="career.html">경력</a>
+      <a href="board.html">공지 &amp; 문의</a>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <section class="hero-section">
+      <div class="hero-grid"></div>
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1><span class="highlight">강남욱의 홈페이지</span> 입니다</h1>
-        <p>임베디드 시스템/BSP 개발에 전문성을 가진 개발자입니다.</p>
-        <a href="#career" class="btn">경력 보기</a>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <h2>소개</h2>
-      <div class="about-content">
-        <p>
-          안녕하세요! 저는 BSP(Board Support Package), Linux Kernel, 저장장치(SSD) 기반 임베디드 소프트웨어를 개발하는
-          SW 엔지니어 강남욱입니다. 현재 SanDisk INFRA팀에서 클라이언트 SSD(cSSD) 제품의 Thermal / LPM 개발을 담당하고 있으며,
-          이전에는 LG전자 모바일(MC)/자동차부품(VC) 사업본부에서 Device Driver 포팅, 시스템 최적화, 빌드 환경 구축 등
-          다양한 임베디드 시스템 개발 경험을 쌓아왔습니다.
-        </p>
-        <ul class="skills">
-          <li>SSD Thermal / LPM</li>
-          <li>Linux Kernel / BSP</li>
-          <li>Device Driver (Touch, Sensor, IRRC)</li>
-          <li>시스템 최적화 (부팅시간/메모리)</li>
-          <li>빌드 환경 구축</li>
-          <li>Android Linux Kernel</li>
-          <li>Telematics 통신 장비 개발</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="career" class="section">
-      <h2>경력</h2>
-      <div class="career-list">
-        <div class="career-item">
-          <div class="career-header">
-            <h3>SanDisk · INFRA팀 · 부장</h3>
-            <span class="career-period">2019.07 ~ 현재</span>
-          </div>
-          <ul>
-            <li>클라이언트 SSD(cSSD) 제품 개발</li>
-            <li>Thermal / LPM(Low Power Mode) 관련 업무 담당</li>
-            <li>주요 모델: WD Black SN850, GX7100, GX7150</li>
-            <li>GX Pro 8200 프로젝트 진행 중</li>
-          </ul>
-        </div>
-        <div class="career-item">
-          <div class="career-header">
-            <h3>LG전자 · VC(Vehicle Component)사업본부 · 선임연구원</h3>
-            <span class="career-period">2015.04 ~ 2019.06</span>
-          </div>
-          <ul>
-            <li>Telematics 통신 장비(자동차 부품) 개발</li>
-            <li>Linux Kernel System 제품 적용 및 포팅</li>
-            <li>시스템 최적화 (부팅 시간, 메모리 사이즈)</li>
-            <li>빌드 환경 구축 및 OEM 요구사항 대응</li>
-          </ul>
-        </div>
-        <div class="career-item">
-          <div class="career-header">
-            <h3>LG전자 · MC(Mobile Communication)사업본부 · 주임연구원</h3>
-            <span class="career-period">2008.08 ~ 2015.04</span>
-          </div>
-          <ul>
-            <li>Android Linux Kernel 시스템 최적화</li>
-            <li>Mexico Telcel 사업자 대응 서브 프로젝트 리더 (일정관리~출하 PM)</li>
-            <li>양산 프로그래밍 진행 (PRADA3, FX3 등)</li>
-            <li>BSP Device Driver(Touch, Sensor) 포팅 및 안정화 (3년 이상)</li>
-            <li>Synaptics, Atmel, Maxim 등 다양한 Touch IC 벤더와 협업</li>
-            <li>Qualcomm, NVIDIA, Intel, TI, Freescale(NXP) 등 다양한 AP 칩 환경에서 프로젝트 수행</li>
-          </ul>
-        </div>
-        <div class="career-item">
-          <div class="career-header">
-            <h3>LG전자 · CTO · 인턴</h3>
-            <span class="career-period">2008.01 ~ 2008.06</span>
-          </div>
-          <ul>
-            <li>패턴 인식 알고리즘 최적화</li>
-            <li>MP4 파일 포맷 관련 작업 참여</li>
-          </ul>
+        <span class="badge-tag">FLASH STORAGE &amp; EMBEDDED SYSTEMS</span>
+        <h1>데이터의 가능성을<br /><span class="brand-accent">스토리지 기술</span>로 확장합니다</h1>
+        <p>SSD 펌웨어, Thermal/LPM, Linux Kernel과 BSP를 다루는 엔지니어 강남욱의 포트폴리오입니다.</p>
+        <div class="hero-buttons">
+          <a href="career.html" class="btn btn-primary">경력 및 프로젝트</a>
+          <a href="about.html" class="btn btn-secondary">엔지니어링 소개</a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>연락처</h2>
-      <div class="contact-content">
-        <p>궁금한 점이 있으시면 언제든 연락해주세요.</p>
-        <ul class="contact-list">
-          <li>📧 Email: <a href="mailto:hakgoboys@naver.com">hakgoboys@naver.com</a></li>
-          <li>💻 GitHub: <a href="https://github.com/onlyuri81-del" target="_blank" rel="noopener">github.com/onlyuri81-del</a></li>
-          <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/namwook-kang-7540b5113/" target="_blank" rel="noopener">linkedin.com/in/namwook-kang</a></li>
-        </ul>
+    <section class="portal-section">
+      <div class="container">
+        <span class="eyebrow">EXPLORE THE PORTFOLIO</span>
+        <h2>전문 영역을 탐색해보세요</h2>
+        <div class="portal-grid">
+          <a href="about.html" class="portal-card">
+            <span class="card-icon">◈</span>
+            <h3>소개</h3>
+            <p>SSD와 임베디드 시스템을 바라보는 엔지니어링 역량과 기술 스택을 소개합니다.</p>
+            <span class="link-arrow">자세히 보기 →</span>
+          </a>
+          <a href="career.html" class="portal-card">
+            <span class="card-icon">⌁</span>
+            <h3>경력 타임라인</h3>
+            <p>SanDisk와 LG전자에서 수행한 프로젝트, 역할, 주요 성과를 확인할 수 있습니다.</p>
+            <span class="link-arrow">타임라인 보기 →</span>
+          </a>
+          <a href="board.html" class="portal-card">
+            <span class="card-icon">✉</span>
+            <h3>공지 &amp; 문의</h3>
+            <p>기술 관련 공지와 협업·문의 방법을 확인하세요.</p>
+            <span class="link-arrow">문의하기 →</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2026 강남욱. All rights reserved.</p>
-  </footer>
-
+  <footer class="site-footer"><p>&copy; 2026 강남욱. Storage Engineering Portfolio.</p></footer>
   <script src="js/main.js"></script>
 </body>
 </html>
